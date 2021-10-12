@@ -15,8 +15,16 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <!-- adding picture tags for multiple sizes -->
+    
+    <picture>
+      <!-- adding source set tags for square images  -->
+      <source srcset="images/museum-960_x_960.jpg,
+      images/museum-1920_x_1920.jpg 2x,
+      images/museum-2880_x_2880.jpg 3x" media="(min-width:960px)">
 
+      <img src="images/museum.jpg" alt="lobby of a museum">
+    </picture>
   </header>
 </body>
 
